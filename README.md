@@ -19,6 +19,8 @@ Create `.env.local` in the project root:
 TMDB_API_KEY=your_tmdb_api_key_here
 ```
 
+The server also accepts `VITE_TMDB_API_KEY` for compatibility with the original Vite app.
+
 ## Run Locally
 
 ```bash

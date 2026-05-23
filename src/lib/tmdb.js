@@ -1,7 +1,11 @@
 const BASE_URL = "https://api.themoviedb.org/3";
 
 function getApiKey() {
-  return process.env.TMDB_API_KEY || process.env.NEXT_PUBLIC_TMDB_API_KEY;
+  return (
+    process.env.TMDB_API_KEY ||
+    process.env.VITE_TMDB_API_KEY ||
+    process.env.NEXT_PUBLIC_TMDB_API_KEY
+  );
 }
 
 async function tmdbFetch(path, params = {}) {
