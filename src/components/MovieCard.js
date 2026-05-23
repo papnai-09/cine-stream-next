@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { getPosterUrl } from "@/lib/tmdb";
 import { useFavorites } from "@/context/FavoritesContext";
 
@@ -13,11 +14,13 @@ export default function MovieCard({ movie }) {
   return (
     <article className="movie-card">
       <Link href={`/movie/${movie.id}`} className="movie-link">
-        <img
+        <Image
           src={getPosterUrl(movie.poster_path)}
           alt={`${movie.title} poster`}
           className="movie-poster"
+          fill
           loading="lazy"
+          sizes="(max-width: 768px) 45vw, (max-width: 1200px) 25vw, 180px"
         />
         <div className="movie-overlay">
           <h3>{movie.title}</h3>

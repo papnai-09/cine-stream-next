@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { fetchMovieDetails, getPosterUrl } from "@/lib/tmdb";
 import MovieDetailFavorite from "@/components/MovieDetailFavorite";
@@ -50,10 +51,13 @@ export default async function MovieDetailPage({ params }) {
       </Link>
 
       <div className="detail-layout">
-        <img
+        <Image
           className="detail-poster"
           src={getPosterUrl(movie.poster_path, "w780")}
           alt={`${movie.title} poster`}
+          width={780}
+          height={1170}
+          priority
         />
 
         <div className="detail-copy">
