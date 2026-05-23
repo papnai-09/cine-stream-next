@@ -48,5 +48,7 @@ export function fetchMovieDetails(id) {
 }
 
 export function getPosterUrl(path, size = "w500") {
-  return path ? `https://image.tmdb.org/t/p/${size}${path}` : "/window.svg";
+  return path
+    ? `https://image.tmdb.org/t/p/${size}${path}`
+    : "/placeholder-poster.svg";
 }

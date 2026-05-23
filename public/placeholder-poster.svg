@@ -1,0 +1,8 @@
+<svg width="500" height="750" viewBox="0 0 500 750" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="500" height="750" fill="#17172F"/>
+  <rect x="50" y="70" width="400" height="610" rx="18" fill="#24244A" stroke="#343456" stroke-width="4"/>
+  <circle cx="250" cy="300" r="72" fill="#FF006E" fill-opacity="0.18"/>
+  <path d="M220 255L310 300L220 345V255Z" fill="#22D3EE"/>
+  <text x="250" y="430" text-anchor="middle" fill="#E7E7F1" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="700">No Poster</text>
+  <text x="250" y="476" text-anchor="middle" fill="#A8A8BD" font-family="Segoe UI, Arial, sans-serif" font-size="22">CineStream</text>
+</svg>
